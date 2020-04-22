@@ -9,8 +9,10 @@ The LRTD repository contains the codes of our LRTD paper. We validate our approa
 - torch 0.4.1
 ## Usage
 
-```1.  download data from [Cholec80](http://camma.u-strasbg.fr/datasets) and then split the data into 1fps using [ffmpeg](https://www.johnvansickle.com/ffmpeg/) to split the videos to image frames. ```
-```2.  sh split_video_to_image.sh ```
+```
+1.  download data from [Cholec80](http://camma.u-strasbg.fr/datasets) and then split the data into 1fps using [ffmpeg](https://www.johnvansickle.com/ffmpeg/) to split the videos to image frames. 
+2.  sh split_video_to_image.sh 
+```
 ## Citation
 If the code is helpful for your research, please cite our paper.
 ```
