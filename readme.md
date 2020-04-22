@@ -13,12 +13,16 @@ The LRTD repository contains the codes of our LRTD paper. We validate our approa
 
 2.  sh split_video_to_image.sh 
 
-3.  Each time we first select data for training, each time select 10% data, so first time we use 10% data to train, next 20,...until 50% data. The selected data is stored in nonlocalselect_txt folder.
+3.  select partial data to train
+- Each time we first select data for training, each time select 10% data, so first time we use 10% data to train, next 20,...until 50% data. 
+- use ./nonlocalselect.sh to select data. The selected data is stored in nonlocalselect_txt folder. 
+- note that the select_chose can be 'random', 'DBN', 'non_local', for the first 10% data, we all use random selection, from the next selection, we separately use  'random', 'DBN' or 'non_local'. So the first 10% data select, we set '--is_first_selection=True' in ./nonlocalselect.sh. From the next selection, we shoule give which model to use as valiation model for the rest of the data, so we change '--val_model_path' as our desired model.
 
 3.  run train_nolocalselect_ResNetLSTM.sh for training of ResLSTM backbone.
 
 4.  run train_nolocalselect_ResNetLSTM_nolocalFT.sh for training of ResLSTM-Nonlocal backbone.
 
+4.  for testing, python test_singlenet_phase_+nonlocal.py -c 0 -n model(stored in results_ResLSTM_nolocal)
 
 ## Citation
 If the code is helpful for your research, please cite our paper.
