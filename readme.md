@@ -9,10 +9,17 @@ The LRTD repository contains the codes of our LRTD paper. We validate our approa
 - torch 0.4.1
 ## Usage
 
-```
 1.  download data from [Cholec80](http://camma.u-strasbg.fr/datasets) and then split the data into 1fps using [ffmpeg](https://www.johnvansickle.com/ffmpeg/) to split the videos to image frames. 
+
 2.  sh split_video_to_image.sh 
-```
+
+3.  Each time we first select data for training, each time select 10% data, so first time we use 10% data to train, next 20,...until 50% data. The selected data is stored in nonlocalselect_txt folder.
+
+3.  run train_nolocalselect_ResNetLSTM.sh for training of ResLSTM backbone.
+
+4.  run train_nolocalselect_ResNetLSTM_nolocalFT.sh for training of ResLSTM-Nonlocal backbone.
+
+
 ## Citation
 If the code is helpful for your research, please cite our paper.
 ```
