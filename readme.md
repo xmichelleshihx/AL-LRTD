@@ -9,7 +9,7 @@ The LRTD repository contains the codes of our LRTD paper. We validate our approa
 - torch 0.4.1
 ## Usage
 
-1.  download data from [Cholec80](http://camma.u-strasbg.fr/datasets) and then split the data into 1fps using [ffmpeg](https://www.johnvansickle.com/ffmpeg/) to split the videos to image frames. 
+1.  download data from [Cholec80](http://camma.u-strasbg.fr/datasets) and then split the data into 25fps using [ffmpeg](https://www.johnvansickle.com/ffmpeg/). 
     ```
     sh split_video_to_image.sh
     ```
@@ -45,7 +45,7 @@ The LRTD repository contains the codes of our LRTD paper. We validate our approa
      
 
      ```
-2.  split data into train, val, test data
+2.  split data into train, val, test data (in our setting, we would downsample from 25fps to 1fps when spliting data)
     ```
     python get_paths_labels.py .
     ```
