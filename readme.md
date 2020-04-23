@@ -1,7 +1,7 @@
 # LRTD: Long-Range Temporal Dependency based Active Learning for Surgical Workflow Recognition
 Xueying Shi, Yueming Jin, Qi Dou, and Pheng-Ann Heng
 ## Introduction
-![long range temporal based relation matrix](figure3.pdf)
+![long range temporal based relation matrix](lengend.png)
 A histology image (a) is typically broken into small image patches (b) for cancer grading. We propose to utilise the cell graph (d) that is built from individual nuclei after segmentation (c) to model the entire tissue micro-environment for cancer grading.
 The LRTD repository contains the codes of our LRTD paper. We validate our approach on a large surgical video dataset [Cholec80](http://camma.u-strasbg.fr/datasets) by performing surgical workflow recognition task. By using our LRTD based selection strategy, we can outperform other state-ofthe-art active learning methods who only consider neighbor-frame information. Using only up to **50%** of samples, our approach can exceed the performance of full-data training
 ## Requirements
