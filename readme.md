@@ -10,10 +10,13 @@ The LRTD repository contains the codes of our LRTD paper. We validate our approa
 ## Usage
 
 1.  download data from [Cholec80](http://camma.u-strasbg.fr/datasets) and then split the data into 1fps using [ffmpeg](https://www.johnvansickle.com/ffmpeg/) to split the videos to image frames. 
+    ```
+    sh split_video_to_image.sh
+    ```
 
-2.  ```
-    sh split_video_to_image.sh, 
-    python get_paths_labels.py to split train, val, test data.
+2.  split data into train, val, test data
+    ```
+    python get_paths_labels.py .
     ```
 
 3.  select partial data to train
