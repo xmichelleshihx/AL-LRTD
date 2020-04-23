@@ -1,7 +1,7 @@
 # LRTD: Long-Range Temporal Dependency based Active Learning for Surgical Workflow Recognition
 Xueying Shi, Yueming Jin, Qi Dou, and Pheng-Ann Heng
 ## Introduction
-![long range temporal based relation matrix](figure3.png)
+<td><img src="figure3.png" width=270 height=480></td>
 
 
 The LRTD repository contains the codes of our LRTD paper. We validate our approach on a large surgical video dataset [Cholec80](http://camma.u-strasbg.fr/datasets) by performing surgical workflow recognition task. By using our LRTD based selection strategy, we can outperform other state-ofthe-art active learning methods who only consider neighbor-frame information. Using only up to **50%** of samples, our approach can exceed the performance of full-data training
