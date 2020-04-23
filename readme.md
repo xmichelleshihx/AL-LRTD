@@ -1,10 +1,10 @@
 # LRTD: Long-Range Temporal Dependency based Active Learning for Surgical Workflow Recognition
 Xueying Shi, Yueming Jin, Qi Dou, and Pheng-Ann Heng
 ## Introduction
-<td><img src="figure3.png" width=960 height=250></td>
-Fig. 3: LRTD based sample selection. LRTD comes from the non-local cross-frame dependency score that is computed by dependency matrix Mmn for clip XT in Eq. 4.
-
 The LRTD repository contains the codes of our LRTD paper. We validate our approach on a large surgical video dataset [Cholec80](http://camma.u-strasbg.fr/datasets) by performing surgical workflow recognition task. By using our LRTD based selection strategy, we can outperform other state-ofthe-art active learning methods who only consider neighbor-frame information. Using only up to **50%** of samples, our approach can exceed the performance of full-data training
+<td><img src="figure3.png" width=960 height=250></td>
+    Fig. 3: LRTD based sample selection. LRTD comes from the non-local cross-frame dependency score that is computed by dependency matrix Mmn for clip XT in Eq. 4.
+
 ## Requirements
 - python 3.6.9
 - torch 0.4.1
