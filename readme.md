@@ -4,7 +4,7 @@ Xueying Shi, Yueming Jin, Qi Dou, and Pheng-Ann Heng
 ## Introduction
 The LRTD repository contains the codes of our LRTD paper. We validate our approach on a large surgical video dataset [Cholec80](http://camma.u-strasbg.fr/datasets) by performing surgical workflow recognition task. By using our LRTD based selection strategy, we can outperform other state-ofthe-art active learning methods who only consider neighbor-frame information. Using only up to **50%** of samples, our approach can exceed the performance of full-data training
 <td><img src="figure3-1.png" width=960 height=300></td>
-    Fig. 3: LRTD based sample selection. LRTD comes from the non-local cross-frame dependency score that is computed by dependency matrix Mmn for clip XT in Eq. 4.
+Fig. 3: LRTD based sample selection. LRTD comes from the non-local cross-frame dependency score that is computed by dependency      matrix Mmn for clip XT in Eq. 4.
 
 ## Requirements
 - python 3.6.9
@@ -18,7 +18,6 @@ The LRTD repository contains the codes of our LRTD paper. We validate our approa
 2.  Resize the image from 1920 x 1080 to 250 x 250
 2.  after creating data, my data folders would like the following structure
     ```
-     |
      ├── chorec80 
      |   ├── data_frames(put the raw image frames in this folder)
      |       ├── video01
