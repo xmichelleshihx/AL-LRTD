@@ -11,7 +11,7 @@ The LRTD repository contains the codes of our LRTD paper. We validate our approa
 
 1.  download data from [Cholec80](http://camma.u-strasbg.fr/datasets) and then split the data into 1fps using [ffmpeg](https://www.johnvansickle.com/ffmpeg/) to split the videos to image frames. 
 
-2.  sh split_video_to_image.sh 
+2.  sh split_video_to_image.sh, python get_paths_labels.py to split train, val, test data.
 
 3.  select partial data to train
 - we initialized with randomly selected 10% data from the unlabelled sample pool, use ./nonlocalselect.sh to select data. The selected data is stored in nonlocalselect_txt folder. 
