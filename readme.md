@@ -13,7 +13,38 @@ The LRTD repository contains the codes of our LRTD paper. We validate our approa
     ```
     sh split_video_to_image.sh
     ```
+2.  Resize the image from 1920 x 1080 to 250 x 250
+2.  after creating data, my data folders would like the following structure
+    ```
+     |
+     ├── chorec80 
+     |   ├── data_frames(put the raw image frames in this folder)
+     |       ├── video01
+     |          ├── video01-1.jpg
+     |          ├── ...
+     |          ├── video01-xxx.jpg
+     |       ├── videoxxx
+     |       ├── ...
+     |       ├── video80
+     |   ├── data_resize(put the resized image frames in this folder)	   
+     |       ├── video01
+     |          ├── video01-1.jpg
+     |          ├── ...
+     |          ├── video01-xxx.jpg
+     |       ├── videoxxx
+     |       ├── ...
+     |       ├── video80
+     |   ├── phase_annotations
+     |       ├── video01-phase.txt
+     |       ├── ...
+     |       ├── video80-phase.txt
+     |   ├── tool_annotations
+     |       ├── video01-tool.txt
+     |       ├── ...
+     |       ├── video80-tool.txt
+     
 
+     ```
 2.  split data into train, val, test data
     ```
     python get_paths_labels.py .
